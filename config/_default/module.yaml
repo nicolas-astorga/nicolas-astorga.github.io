@@ -1,4 +1,3 @@
 module:
   imports:
-    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox
     - path: github.com/HugoBlox/theme-academic-cv
