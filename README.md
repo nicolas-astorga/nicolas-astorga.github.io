@@ -1,6 +1,6 @@
 # nicolas-astorga.github.io
 
-This is a minimal static site for **Nicolás Astorga**. It’s designed to look and feel close to [Kasia Kobalczyk’s website](https://kasia-kobalczyk.github.io/) but:
+This is a minimal static site for **Nicolás Astorga**.
 - it **starts with “About Me”** at the very top (no hero block), and
 - there is **no “Accomplishments”** section.
 
