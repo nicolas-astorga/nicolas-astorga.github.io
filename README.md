@@ -24,4 +24,6 @@ Enable **Pages → Build and deployment → Source: GitHub Actions** in repo set
 - `static/uploads/` — files for download (e.g., CV).
 
 ## License
-Content © Nicolás Astorga. Theme by Hugo Blox (MIT).
+Content © Nicolás Astorga. Theme by Hugo Blox (MIT). 
+
+ASDSdsafdsaf
