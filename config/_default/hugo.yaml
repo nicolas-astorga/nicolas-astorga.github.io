@@ -1,0 +1,12 @@
+baseURL: "https://nicolas-astorga.github.io/"
+title: "Nicolás Astorga"
+paginate: 10
+enableRobotsTXT: true
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+module:
+  hugoVersion:
+    extended: true
+    min: "0.128.2"
+minify:
+  disableXML: true
