@@ -1,0 +1,85 @@
+
+/* Nicolas Astorga — minimal academic site (no frameworks) */
+:root{
+  --bg: #ffffff;
+  --text: #141414;
+  --muted: #5a5a5a;
+  --card: #f6f7f9;
+  --accent: #155EEF;
+  --border: #e5e7eb;
+}
+html[data-theme="dark"]{
+  --bg: #0b0c0f;
+  --text: #e9edf1;
+  --muted: #a9b1ba;
+  --card: #12151b;
+  --accent: #4f83ff;
+  --border: #222733;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+/* Navbar */
+.nav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:saturate(180%) blur(6px);
+  background:color-mix(in oklab, var(--bg) 86%, transparent);
+  border-bottom:1px solid var(--border);
+}
+.nav .wrap{display:flex;align-items:center;gap:16px;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:.2px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px;align-items:center}
+.nav li a{color:var(--text);opacity:.86}
+.nav li a.active{color:var(--accent)}
+.toggle{
+  border:1px solid var(--border);border-radius:10px;padding:6px 10px;cursor:pointer;
+  background:var(--card);color:var(--text);font-size:14px;
+}
+/* Header section (About at the top) */
+.section{padding:64px 0;border-bottom:1px solid var(--border)}
+.section h2{font-size:30px;line-height:1.2;margin:0 0 14px}
+.section .sub{color:var(--muted);margin-top:-4px;margin-bottom:18px}
+.lead{font-size:18px}
+.grid{
+  display:grid;gap:22px;
+  grid-template-columns:1fr;
+}
+@media(min-width:960px){
+  .grid{grid-template-columns:260px 1fr}
+}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;
+}
+.img-round{width:200px;height:200px;border-radius:50%;object-fit:cover;border:1px solid var(--border);background:#ddd}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:transparent;margin:0 8px 8px 0;color:var(--muted);font-size:14px}
+/* Timelines */
+.timeline{display:grid;gap:14px}
+.timeline .item{border-left:3px solid var(--accent);padding-left:12px}
+.timeline .item .when{font-size:13px;color:var(--muted)}
+.timeline .item .what{font-weight:600}
+/* Publications */
+.pub{margin:0 0 14px}
+.pub .venue{color:var(--muted)}
+/* Footer */
+footer{padding:28px 0;color:var(--muted)}
+footer .legal{font-size:13px}
+/* Simple responsive table */
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid var(--border);text-align:left}
+/* Buttons */
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text)}
+.btn:hover{transform:translateY(-1px)}
+/* Chips row */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+/* Utilities */
+.mt-0{margin-top:0}.mt-8{margin-top:8px}.mt-16{margin-top:16px}.mt-24{margin-top:24px}.mt-32{margin-top:32px}
+.small{font-size:14px;color:var(--muted)}

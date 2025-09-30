@@ -1,30 +1,26 @@
 # nicolas-astorga.github.io
 
-Personal website for **Nicolás Astorga**, built with **Hugo Blox (Wowchemy)** using the Academic CV template.
+This is a minimal static site for **Nicolás Astorga**. It’s designed to look and feel close to [Kasia Kobalczyk’s website](https://kasia-kobalczyk.github.io/) but:
+- it **starts with “About Me”** at the very top (no hero block), and
+- there is **no “Accomplishments”** section.
 
-## Local preview
+## How to publish
 
-1. Install [Hugo Extended](https://docs.hugoblox.com/getting-started/install-hugo/) (v0.128+).
-2. From this folder, run:
-   ```bash
-   hugo mod tidy   # fetch theme modules
-   hugo server -D  # preview
-   ```
-3. Open http://localhost:1313
+1. Create a repository named **`nicolas-astorga.github.io`** in your GitHub account.
+2. Upload (or push) the contents of this folder to the repo root (e.g., `index.html`, the `assets/` folder, etc.).
+3. Go to **Settings → Pages** and set **Source** to “Deploy from a branch”, then keep **Branch** set to `main` and `/ (root)`.
+4. Wait a minute and visit **https://nicolas-astorga.github.io**.
 
-## Deploying on GitHub Pages
+No build step is required because this is a plain static site (no Hugo/Quarto).
 
-This repo includes a GitHub Actions workflow that builds and deploys the site to **GitHub Pages** on pushes to `main`.  
-Enable **Pages → Build and deployment → Source: GitHub Actions** in repo settings.
+## Replace your profile photo
+Replace the placeholder image at `assets/img/profile.svg` with your own photo named `profile.jpg` or `profile.png` and update the `<img>` tag in `index.html` accordingly (or just keep the SVG if you prefer).
 
-## Content
-- `content/_index.md` — homepage layout (starts with **About Me**; no Accomplishments section).
-- `content/authors/nicolas-astorga/_index.md` — profile and socials.
-- `content/publications/` — publications page.
-- `static/uploads/` — files for download (e.g., CV).
+## Where to edit your content
+- **About / Research / Experience / Education / Skills / Contact**: `index.html`
+- **Full publications list**: `publications.html`
+- **Colors / spacing / fonts**: `assets/css/styles.css`
 
-## License
-Content © Nicolás Astorga. Theme by Hugo Blox (MIT). 
-
-ASDSdsafdsaf
-fsdafsdfds
+## Notes
+- The layout and content were created from your CV and Scholar profile link you provided.
+- If you prefer to use the Wowchemy/Hugo template (like Kasia), we can also generate a Hugo project with matching sections and set up a GitHub Action to build — just say the word.
