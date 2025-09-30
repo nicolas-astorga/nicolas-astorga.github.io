@@ -10,3 +10,5 @@ module:
     min: "0.128.2"
 minify:
   disableXML: true
+disableKinds:
+  - RSS
