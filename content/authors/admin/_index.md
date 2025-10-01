@@ -26,12 +26,11 @@ bio: Researching reasoning, Bayesian experimental design, and optimisation in/wi
 
 # Interests to show in About widget
 interests:
-  - Reasoning & System‑2 with LLMs
-  - Bayesian Experimental Design & Active Learning
-  - Bayesian Optimisation
+  - Large Language Models (LLMs)
+  - Reasoning & RL with LLMs
+  - Bayesian Experimental Design, Active Learning & Bayesian Optimization
+  - Autoformulation for optimization with LLMs
   - Generative Models & Variational Inference
-  - Information Theory
-  - ML for Astronomy
 
 # Education to show in About widget
 education:
@@ -42,8 +41,6 @@ education:
       institution: University of Chile (2020–2023)
     - course: B.Sc. — Computer, Electrical & Mechanical Engineering (Three Major)
       institution: University of Chile (2013–2019)
-    - course: P.E. — Electrical Engineering
-      institution: University of Chile (2021)
 
 # Social/Academic Networking
 social:
@@ -64,6 +61,6 @@ social:
 highlight_name: true
 ---
 
-I’m a Ph.D. student at the University of Cambridge advised by **Prof. Mihaela van der Schaar**. My research explores **reasoning**, **Bayesian experimental design**, and **optimisation** in the context of **LLMs**. I’m supported by a fully‑funded **W.D. Armstrong Trust Fund** award (expected graduation **2027**).
+I’m a Ph.D. student at the University of Cambridge advised by Prof. Mihaela van der Schaar. My research explores **reasoning**, **Bayesian experimental design**, and **optimization** in the context of **LLMs**. Previously, I completed a two M.Sc. in Electrical Engineering and Computer Science at the University of Chile. I also worked as an ML Engineer at ALeRCE, and interned at Harvard IACS.
 
-Previously, I completed a dual **M.Sc.** in **Electrical Engineering** and **Computer Science** at the **University of Chile**—ranked **1st/22** in the EE M.Sc. and awarded the **ANID National Master’s Scholarship** (top ~10%). I also worked as an **ML Engineer** at **ALeRCE**, contributed to the **ELAsTiCC** challenge, and interned at **Harvard IACS**.
+My core ML interest is LLM research—specifically (1) leveraging the models’ inductive biases to drive exploration and exploitation, and (2) using that process to improve those biases themselves. Exploration–exploitation is a joint process that requires information acquisition with an objective maximization in place, which makes search methods, efficient experimentation, and sample-efficient information gathering especially interesting. The experience gathered from the world can then feed back into the model via in-context learning or training. I think the interplay between (1) and (2)  accepts many implementations, which is part of the fun. I love that LLMs—and deep learning more are built to learn and explore.
