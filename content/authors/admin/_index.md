@@ -1,5 +1,4 @@
 ---
-# Display name
 title: Nicolás Astorga
 
 # Full name (for SEO)
@@ -8,13 +7,13 @@ last_name: Astorga
 
 # Status emoji
 status:
-  icon: 🧑‍🔬
+  icon: 🧠
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: PhD Researcher in Machine Learning
+role: Ph.D. student in Machine Learning
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -22,43 +21,52 @@ organizations:
     url: https://www.vanderschaar-lab.com
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD researcher focused on reasoning, Bayesian experimental design, and optimisation for large language models.
+bio: Researching reasoning, Bayesian experimental design, and optimisation for large language models.
 
 # Interests to show in About widget
 interests:
-  - Bayesian experimental design
-  - Large language models
-  - Bayesian optimisation
-  - Probabilistic machine learning
-  - Active learning for science and healthcare
+  - Reasoning and Planning with LLMs
+  - Bayesian Experimental Design
+  - Active Learning and Optimisation
+  - Probabilistic Modelling & Variational Inference
+  - Machine Learning for Astronomy and Healthcare
 
 # Education to show in About widget
 education:
   courses:
     - course: Ph.D. in Machine Learning
-      institution: University of Cambridge (2023 – Present)
+      institution: University of Cambridge, 2023 – present
     - course: Dual M.Sc. in Electrical Engineering & Computer Science
-      institution: University of Chile (2020 – 2023)
+      institution: University of Chile, 2020 – 2023
     - course: B.Sc. Three Major – Computer, Electrical & Mechanical Engineering
-      institution: University of Chile (2013 – 2019)
+      institution: University of Chile, 2013 – 2019
     - course: P.E. – Electrical Engineering
-      institution: University of Chile (2021)
+      institution: University of Chile, 2021
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
+#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
+#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
+  - icon: envelope
+    icon_pack: fas
+    link: '/#contact'
   - icon: github
     icon_pack: fab
     link: https://github.com/nicolas-astorga
+  - icon: cv
+    icon_pack: ai
+    link: uploads/my_resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'nicolas.astorga@cam.ac.uk'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a Ph.D. researcher in the Machine Learning and AI lab of Prof. Mihaela van der Schaar at the University of Cambridge. My work studies how large language models can reason about uncertainty, design informative experiments, and optimise decision-making under limited observations. I am particularly interested in coupling Bayesian experimental design with foundation models to build reliable, sample-efficient agents for scientific discovery and human-centred applications.
 
-Before starting my Ph.D., I completed dual M.Sc. degrees in Electrical Engineering and Computer Science at the University of Chile, focusing on generative inference models and the classification of astronomical objects. I also earned a cross-disciplinary B.Sc. spanning computer, electrical, and mechanical engineering, and obtained the Professional Engineer accreditation in Electrical Engineering.
+I am a Ph.D. student in the van der Schaar Lab at the University of Cambridge, where I work with Prof. Mihaela van der Schaar on reasoning, Bayesian experimental design, and optimisation for large language models. My research is supported by a W.D. Armstrong Trust Fund studentship and aims to make adaptive, data-efficient decision-making practical in high-stakes settings.
 
-I have deployed production-grade machine learning systems for the ALeRCE astronomy collaboration, developed generative clustering models at Harvard's Institute for Applied Computational Science, and advanced semi-supervised learning methods at the University of Chile's Laboratory of Computational Intelligence.
+Before joining Cambridge, I completed a dual M.Sc. in Electrical Engineering and Computer Science at the University of Chile, where I focused on generative inference models and astronomical object classification. I previously earned a three-major B.Sc. in Computer, Electrical, and Mechanical Engineering, as well as the Professional Engineer accreditation in Electrical Engineering.
+
+My work spans probabilistic modelling, variational inference, and large-scale machine learning systems for astronomy and healthcare. I enjoy collaborating with interdisciplinary teams to bring principled ML research into production environments.

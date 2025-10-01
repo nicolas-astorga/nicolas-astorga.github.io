@@ -1,6 +1,6 @@
 ---
-title: 
-summary: Selected publications across conferences, journals, and workshops.
+title:
+summary: Selected publications and preprints by Nicolás Astorga.
 date: "2018-06-28T00:00:00Z"
 
 reading_time: false  # Show estimated reading time?

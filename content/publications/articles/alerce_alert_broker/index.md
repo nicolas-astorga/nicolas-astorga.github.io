@@ -3,35 +3,27 @@ title: 'The Automatic Learning for the Rapid Classification of Events (ALeRCE) A
 
 authors:
   - Francisco Förster
-  - Gonzalo Cabrera-Vives
+  - Gastón Cabrera-Vives
   - Eduardo Castillo-Navarrete
-  - Pedro A. Estévez
+  - Pablo A. Estévez
   - admin
-  - 'et al.'
+  - et al.
 
-date: '2021-02-01T00:00:00Z'
-publishDate: '2021-02-01T00:00:00Z'
+date: '2021-01-01T00:00:00Z'
+publishDate: '2021-01-01T00:00:00Z'
 
 publication_types: ['2']
 
 publication: The Astronomical Journal
-publication_short: In *AJ 2021*
+publication_short: *AJ*, 2021
 
-abstract: |
-  We describe the architecture, models, and performance of the ALeRCE alert broker that processes alerts from synoptic surveys.
-  The system combines machine learning pipelines, active learning, and expert feedback to enable rapid astronomical event
-  classification.
+abstract: We present the ALeRCE alert broker, a machine learning platform for real-time classification of astronomical events, highlighting its architecture, performance, and scientific impact.
+summary: Architecture and performance of the ALeRCE real-time astronomical alert broker.
 
-summary: Comprehensive overview of the ALeRCE alert broker and its machine learning infrastructure for real-time astronomy.
-
-tags: [Astronomy, Alert Brokers, Machine Learning Systems]
+tags: [Astronomy, Machine Learning Systems, Real-time Processing]
 
 featured: false
 
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: true
+links: []
+
 ---
-ALeRCE demonstrates how collaborative machine learning systems can scale to millions of nightly alerts while supporting
-scientific follow-up campaigns.

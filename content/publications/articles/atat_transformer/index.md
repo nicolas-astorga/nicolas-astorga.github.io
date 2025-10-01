@@ -2,33 +2,27 @@
 title: 'ATAT: Astronomical Transformer for Time Series and Tabular Data'
 
 authors:
-  - Gonzalo Cabrera-Vives
-  - Daniel Moreno-Cartagena
+  - Gastón Cabrera-Vives
+  - Diego Moreno-Cartagena
   - admin
   - Ignacio Reyes-Jainaga
-  - 'et al.'
+  - et al.
 
-date: '2024-08-01T00:00:00Z'
-publishDate: '2024-08-01T00:00:00Z'
+date: '2024-03-01T00:00:00Z'
+publishDate: '2024-03-01T00:00:00Z'
 
 publication_types: ['2']
 
 publication: Astronomy & Astrophysics
-publication_short: In *A&A 2024*
+publication_short: *Astronomy & Astrophysics*, 2024
 
-abstract: |
-  We introduce ATAT, a transformer architecture that jointly models astronomical time series and contextual tabular metadata.
-  The model powers real-time alert classification in synoptic surveys by unifying heterogeneous observational data sources.
-
-summary: ATAT fuses light curves and tabular metadata within a transformer to classify astronomical alerts at scale.
+abstract: We introduce ATAT, a Transformer architecture unifying time-series and tabular representations to classify astronomical alerts at scale, delivering state-of-the-art performance for LSST-era surveys.
+summary: Transformer architecture for joint time-series and tabular classification of astronomical alerts.
 
 tags: [Astronomy, Transformers, Time Series]
 
 featured: false
 
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: true
+links: []
+
 ---
-ATAT demonstrates state-of-the-art performance on astronomical alert datasets and underpins the production ALeRCE broker.

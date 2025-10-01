@@ -2,33 +2,27 @@
 title: 'Improving LLM Generation with Inverse and Forward Alignment: Reward Modelling, Prompting, Fine-Tuning, and Inference-Time Optimisation'
 
 authors:
-  - Hansen Sun
-  - Thomas Pouplin
+  - Hao Sun
+  - Théo Pouplin
   - admin
   - Tennison Liu
   - Mihaela van der Schaar
 
-date: '2024-12-01T00:00:00Z'
-publishDate: '2024-12-01T00:00:00Z'
+date: '2024-12-10T00:00:00Z'
+publishDate: '2024-12-10T00:00:00Z'
 
 publication_types: ['1']
 
-publication: NeurIPS 2024 Workshop on System-2 Reasoning at Scale
+publication: NeurIPS Workshop on System-2 Reasoning at Scale
+publication_short: NeurIPS 2024 Workshop on System-2 Reasoning at Scale
 
-abstract: |
-  We study inverse and forward alignment strategies for large language models across reward modelling, prompting, fine-tuning,
-  and inference-time optimisation. The analysis highlights complementary benefits and offers practical guidance for building
-  aligned generation systems.
+abstract: We study complementary inverse and forward alignment strategies for LLM generation, covering reward modelling, prompting, fine-tuning, and inference-time optimisation.
+summary: Workshop paper on combining inverse and forward alignment techniques to improve LLM generation.
 
-summary: Workshop paper comparing alignment strategies for improving LLM generation quality and controllability.
-
-tags: [Large Language Models, Alignment, Responsible AI]
+tags: [Large Language Models, Alignment, Reasoning]
 
 featured: false
 
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: true
+links: []
+
 ---
-This workshop contribution summarises practical recipes for aligning LLMs through inverse and forward optimisation techniques.

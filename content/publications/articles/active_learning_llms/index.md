@@ -4,7 +4,7 @@ title: 'Active Learning with LLMs for Partially Observed and Cost-Aware Scenario
 authors:
   - admin
   - Tennison Liu
-  - Natalia Seedat
+  - Natasha Seedat
   - Mihaela van der Schaar
 
 date: '2024-12-01T00:00:00Z'
@@ -12,24 +12,16 @@ publishDate: '2024-12-01T00:00:00Z'
 
 publication_types: ['1']
 
-publication: Neural Information Processing Systems
+publication: In Advances in Neural Information Processing Systems (NeurIPS)
 publication_short: In *NeurIPS 2024*
 
-abstract: |
-  We couple large language models with Bayesian experimental design to select observations and interventions under
-  partial observability and heterogeneous acquisition costs. The resulting agent reasons over latent task structure,
-  chooses informative queries, and delivers superior performance on scientific discovery and decision-making benchmarks.
+abstract: We study active learning pipelines that integrate LLMs with decision-theoretic acquisition policies to handle partial observability and heterogeneous costs, enabling data-efficient adaptation in complex environments.
+summary: Decision-theoretic active learning with LLMs for partially observed, cost-sensitive settings.
 
-summary: An active learning framework where LLMs reason about partially observed systems and query costly information through Bayesian experimental design.
-
-tags: [Large Language Models, Active Learning, Bayesian Experimental Design]
+tags: [Active Learning, Large Language Models, Decision Making]
 
 featured: true
 
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: true
+links: []
+
 ---
-The method integrates LLM reasoning with principled query selection, enabling adaptive experimentation in settings where data is
-sparse, expensive, or partially observed.

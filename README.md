@@ -1,5 +1,11 @@
 # Personal Website
 
-This repository contains the source for my academic website hosted at [nicolas-astorga.github.io](https://nicolas-astorga.github.io).
-It is based on the [Hugo Academic template](https://github.com/wowchemy/starter-hugo-academic) and customised to present my
-research, publications, and professional experience.
+This repository contains the source code for [nicolas-astorga.github.io](https://nicolas-astorga.github.io), the personal website of Nicolás Astorga. The site is built with [Hugo](https://gohugo.io/) and the [Wowchemy Academic theme](https://github.com/wowchemy/starter-hugo-academic).
+
+## Local development
+
+```bash
+hugo server --disableFastRender
+```
+
+The site will be available at `http://localhost:1313/` while the server is running.

@@ -16,37 +16,16 @@ publishDate: '2025-05-01T00:00:00Z'
 
 publication_types: ['1']
 
-publication: 13th International Conference on Learning Representations
+publication: In Proceedings of the 13th International Conference on Learning Representations (ICLR)
 publication_short: In *ICLR 2025 Spotlight*
 
-abstract: |
-  Ambiguously specified tasks are pervasive in real-world interactions, yet large language models (LLMs) often respond
-  without clarifying missing information. We formalise task ambiguity and cast task resolution as Bayesian experimental
-  design, enabling LLM agents to pose clarifying questions that maximise expected information gain. Our active task
-  disambiguation framework improves solution quality across ambiguity benchmarks and highlights the importance of
-  explicit reasoning about the space of viable task specifications.
+abstract: We formalise task ambiguity for natural language instructions and present an active Bayesian experimental design strategy that enables LLMs to pose clarifying questions, improving reliability in underspecified tasks.
+summary: Active LLM agents that ask targeted questions to resolve ambiguity and improve task execution.
 
-summary: Active task disambiguation casts clarifying-question selection as Bayesian experimental design, enabling LLM agents to resolve ambiguous tasks more effectively.
-
-tags: [Large Language Models, Bayesian Experimental Design, Active Learning]
+tags: [Large Language Models, Active Learning, Bayesian Experimental Design]
 
 featured: true
 
-links:
-  - name: OpenReview
-    url: 'https://openreview.net/forum?id=JAMxRSXLFz'
-  - name: arXiv
-    url: 'https://arxiv.org/abs/2502.04485'
-  - name: PDF
-    url: 'publications/articles/active_task_disambiguation/paper.pdf'
-  - name: Code
-    url: 'https://github.com/nicolas-astorga/active-task-disambiguation'
+links: []
 
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: true
 ---
-Active task disambiguation empowers LLM agents to request targeted clarifications before solving a user query. By
-formalising task ambiguity and framing the interaction as Bayesian experimental design, the method selects questions
-that most efficiently reduce uncertainty, leading to higher quality responses across ambiguity benchmarks.
