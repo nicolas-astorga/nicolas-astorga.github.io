@@ -9,3 +9,4 @@ hugo server --disableFastRender
 ```
 
 The site will be available at `http://localhost:1313/` while the server is running.
+
