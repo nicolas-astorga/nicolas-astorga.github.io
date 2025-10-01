@@ -1,14 +1,13 @@
 ---
 title:
-summary: Selected publications and preprints by Nicolás Astorga.
+summary: 
 date: "2018-06-28T00:00:00Z"
 
-reading_time: false  # Show estimated reading time?
-share: false  # Show social sharing links?
-profile: false  # Show author profile?
-comments: false  # Show comments?
+reading_time: false
+share: false
+profile: false
+comments: false
 
-# Optional header image (relative to `assets/media/` folder).
 header:
   caption: ""
   image: ""
@@ -18,16 +17,11 @@ sections:
     content:
       title: Recent Publications
       text : ''
-      # text: |-
-      #   {{% callout note %}}
-      #   Quickly discover relevant content by [filtering publications](./articles/).
-      #   {{% /callout %}}
       filters:
         folders:
           - articles
-        exclude_featured: true
+        exclude_featured: false
     design:
       columns: '2'
       view: citation
-
 ---

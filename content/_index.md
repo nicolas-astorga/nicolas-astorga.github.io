@@ -1,58 +1,31 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2022-10-24
+date: 2025-10-01
 type: landing
 
 sections:
+
+  # Start with About Me
   - block: about.biography
     id: about
     content:
       title: About Me
       username: admin
 
-  - block: experience
+  # Recent publications (show featured only)
+  - block: collection
+    id: recent
     content:
-      title: Education
-      date_format: Jan 2006
-      items:
-        - title: Ph.D. in Machine Learning
-          company: University of Cambridge
-          company_url: 'https://www.cam.ac.uk'
-          location: Cambridge, United Kingdom
-          date_start: '2023-04-01'
-          description: |2-
-            - Research focus: reasoning, Bayesian experimental design, and optimisation in the context of LLMs.
-            - Supervisor: Prof. Mihaela van der Schaar · Expected graduation 2027.
-            - Fully-funded W.D. Armstrong Trust Fund studentship.
-        - title: Dual M.Sc. – Electrical Engineering; Computer Science
-          company: University of Chile
-          company_url: 'https://www.uchile.cl'
-          location: Santiago, Chile
-          date_start: '2020-01-01'
-          date_end: '2023-12-31'
-          description: |2-
-            - EE thesis: *Generative-Inference Models — Theory and Applications*.
-            - CS thesis: *Classification of Astronomical Objects*.
-            - Coursework emphasis on generative models, variational inference, and information theory.
-            - Ranked 1st of 22 in EE M.Sc.; ANID National Master's Scholarship awardee.
-        - title: B.Sc. Three Major – Computer, Electrical & Mechanical Engineering
-          company: University of Chile
-          location: Santiago, Chile
-          date_start: '2013-03-01'
-          date_end: '2019-12-31'
-          description: |2-
-            - Outstanding student (top 7%).
-        - title: Professional Engineer – Electrical Engineering
-          company: University of Chile
-          location: Santiago, Chile
-          date_start: '2021-01-01'
-          date_end: '2021-12-31'
-          description: |2-
-            - Professional accreditation enabling independent practice (top 10%).
+      title: Recent Publications
+      filters:
+        url: './publications/articles/'
+        featured_only: true
     design:
       columns: '2'
+      view: citation
 
+  # Experience
   - block: experience
     content:
       title: Professional Experience
@@ -60,54 +33,44 @@ sections:
       items:
         - title: Machine Learning Engineer
           company: ALeRCE – Automatic Learning for the Rapid Classification of Events
+          company_url: ''
+          company_logo: alerce-logo
           location: Santiago, Chile
           date_start: '2022-02-01'
-          date_end: '2023-04-30'
+          date_end: '2023-04-01'
           description: |2-
-            - Deployed production-grade ML models with Kubernetes to classify LSST astronomical alerts in real time.
-            - Built distributed PySpark pipelines curating over 30M light-curve observations from multiple catalogues.
-            - Contributed to the ELAsTiCC challenge with a Transformer-based tabular and time-series model (A&A publication).
+            - Deployed production‑grade ML models via Kubernetes to classify LSST astronomical alerts in real time.
+            - Built distributed PySpark pipelines to curate >30M light‑curve observations from multiple catalogues.
+            - Collaborated in the ELAsTiCC challenge; proposed a Transformer‑based model for tabular/time‑series data; work accepted at *Astronomy & Astrophysics*.
         - title: Research Intern
           company: Harvard University — Institute for Applied Computational Science
+          company_logo: harvard-iacs-logo
           location: Cambridge, MA, USA
           date_start: '2019-01-01'
-          date_end: '2019-08-31'
+          date_end: '2019-08-01'
           description: |2-
-            - Proposed MPCC, a GAN–VAE hybrid clustering framework leveraging forward KL divergence (ECCV 2020).
+            - Proposed MPCC, a GAN–VAE hybrid clustering framework (ECCV 2020) leveraging forward KL divergence and extending BigGAN.
         - title: Research Assistant
           company: University of Chile — Lab. of Computational Intelligence
+          company_logo: uchile-logo
           location: Santiago, Chile
           date_start: '2016-03-01'
-          date_end: '2023-12-31'
+          date_end: '2023-12-01'
           description: |2-
-            - Developed VAE-based clustering for astronomical transient detection (IJCNN 2018).
+            - Developed a VAE‑based clustering method for astronomical transient detection (IJCNN 2018).
             - Integrated normalising flows into variational embeddings, improving ELBO by ≥10%.
-            - Achieved fully supervised performance in semi-supervised settings using Gaussian processes with 10% labelled data.
+            - Matched fully supervised performance using Gaussian processes in a semi‑supervised setting with only 10% labeled data.
     design:
       columns: '2'
 
-  - block: collection
-    id: publications
-    content:
-      title: Selected Publications
-      filters:
-        folders:
-          - articles
-        featured_only: true
-    design:
-      columns: '2'
-      view: citation
-
+  # Contact
   - block: contact
     id: contact
     content:
       title: Contact
-      email: nicolas.astorga@cam.ac.uk
+      email: nicolas.astorga at cam.ac.uk
       address:
-        street: Department of Engineering, University of Cambridge
-        city: Cambridge
-        country: United Kingdom
-      directions: van der Schaar Lab, Cambridge, UK
+        street: Centre for Mathematical Sciences, Wilberforce Rd, Cambridge, CB3 0WA
       autolink: false
     design:
       columns: '2'
