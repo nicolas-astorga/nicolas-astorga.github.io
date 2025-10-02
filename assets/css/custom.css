@@ -59,7 +59,7 @@ h3.article-title a:hover {
   }
 }
 
-/* ---- Keep Publications (All) concise: hide action buttons/icons there ---- */
+/* ---- Publications (All) — concise, citation-like look; no action buttons ---- */
 #publications .btn,
 #publications .btn-links,
 #publications .article-metadata .btn,
@@ -70,6 +70,33 @@ h3.article-title a:hover {
   display: none !important;
 }
 
-#publications .list__item {
-  margin-bottom: 0.5rem;
+/* Citation-like typography and spacing for the curated Markdown list */
+#publications h4 {
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+}
+
+#publications ul.pub-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+#publications .pub-list-item {
+  margin: 0 0 0.35rem 0;
+  line-height: 1.35;
+}
+
+#publications .pub-list-item em {
+  font-style: italic;
+}
+
+#publications .pub-list-item strong {
+  font-weight: 600;
+}
+
+/* Slightly tighten paragraph spacing inside the publications block */
+#publications p {
+  margin: 0.25rem 0;
 }
