@@ -31,10 +31,11 @@ h3.article-title a:hover {
   flex: 1 1 auto;
 }
 
+/* ⬆️ Double the image size from 140px → 280px */
 #highlighted .view-article .list__item .media img,
 #highlighted .view-article .list__item .media .article-banner,
 #highlighted .view-article .list__item .media .media-left {
-  max-width: 140px;
+  max-width: 280px;
   height: auto;
   margin: 0 0 0 1rem;
   border-radius: 6px;
@@ -56,4 +57,19 @@ h3.article-title a:hover {
     max-width: 100%;
     margin: 0.5rem 0 0 0;
   }
+}
+
+/* ---- Keep Publications (All) concise: hide action buttons/icons there ---- */
+#publications .btn,
+#publications .btn-links,
+#publications .article-metadata .btn,
+#publications .pub-links,
+#publications .links,
+#publications .article-buttons,
+#publications .badge {
+  display: none !important;
+}
+
+#publications .list__item {
+  margin-bottom: 0.5rem;
 }

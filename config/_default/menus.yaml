@@ -7,10 +7,10 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Highlighted Publications
+  - name: Publications (Highlighted)
     url: '#highlighted'
     weight: 50
-  - name: Publications
+  - name: Publications (All)
     url: '#publications'
     weight: 55
   - name: Contact
