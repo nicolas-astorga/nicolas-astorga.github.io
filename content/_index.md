@@ -13,17 +13,19 @@ sections:
       title: About Me
       username: admin
 
-  # Recent publications (show featured only)
+  # Highlighted publications (featured only)
   - block: collection
-    id: recent
+    id: highlighted
     content:
-      title: Recent Publications
+      title: Highlighted Publications
       filters:
         url: './publications/articles/'
         featured_only: true
+      sort_by: 'publish_date'
+      sort_ascending: false
     design:
       columns: '2'
-      view: citation
+      view: article
 
   # Experience
   - block: experience
@@ -63,15 +65,29 @@ sections:
     design:
       columns: '2'
 
+  # Full publications list (concise)
+  - block: collection
+    id: publications
+    content:
+      title: Publications
+      filters:
+        url: './publications/articles/'
+        featured_only: false
+      sort_by: 'publish_date'
+      sort_ascending: false
+    design:
+      columns: '1'
+      view: citation
+
   # Contact
   - block: contact
     id: contact
     content:
       title: Contact
-      email: nicolas.astorga at cam.ac.uk
+      email: nja46@cam.ac.uk
       address:
         street: Centre for Mathematical Sciences, Wilberforce Rd, Cambridge, CB3 0WA
-      autolink: false
+      autolink: true
     design:
       columns: '2'
 ---

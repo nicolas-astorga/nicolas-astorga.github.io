@@ -49,7 +49,10 @@ social:
     link: '/#contact'
   - icon: github
     icon_pack: fab
-    link: https://github.com/nicolas-astorga
+    link: https://github.com/jumpynitro
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/nicolás-astorga-rocha/
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=oLiBK8cAAAAJ
@@ -63,4 +66,4 @@ highlight_name: true
 
 I’m a Ph.D. student at the University of Cambridge advised by Prof. Mihaela van der Schaar. My research explores **Reasoning**, **Bayesian experimental design**, and **Optimization** in the context of **LLMs**. Previously, I completed a two M.Sc. in Electrical Engineering and Computer Science at the University of Chile. I also worked as an ML Engineer at ALeRCE, and interned at Harvard IACS.
 
-I am really interested in LLM research, leveraging their inductive biases to drive exploration and exploitation, and using the resulting experience to improve those biases (via in-context learning or training). This exploration–exploitation paradigm consists of information acquisition with a goal in mind, making search methods and efficient experimentation also interesting. These ideas admit many implementations, which is part of the fun. I love that LLMs—and deep learning more broadly—are built to search and learn.
+I am really interested in LLM research and leveraging their inductive biases to drive exploration and exploitation, and then using the collected experience to improve those biases (via in-context learning or training). This exploration–exploitation is with a goal in mind, making search methods and efficient experimentation also interesting. These ideas admit many implementations, which is part of the fun. I love that LLMs—and deep learning more broadly—are built to search and learn.

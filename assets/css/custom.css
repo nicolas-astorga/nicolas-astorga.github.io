@@ -16,4 +16,44 @@ h3.article-title a:hover {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-};
+}
+
+/* ---- Highlighted Publications layout tweaks ----
+   Goal: show the featured image on the RIGHT, remain compact. */
+#highlighted .view-article .list__item .media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row-reverse; /* put image on the right */
+}
+
+#highlighted .view-article .list__item .media .media-body {
+  flex: 1 1 auto;
+}
+
+#highlighted .view-article .list__item .media img,
+#highlighted .view-article .list__item .media .article-banner,
+#highlighted .view-article .list__item .media .media-left {
+  max-width: 140px;
+  height: auto;
+  margin: 0 0 0 1rem;
+  border-radius: 6px;
+}
+
+#highlighted .view-article .list__item {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+@media (max-width: 576px) {
+  #highlighted .view-article .list__item .media {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #highlighted .view-article .list__item .media img,
+  #highlighted .view-article .list__item .media .article-banner {
+    max-width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+}
