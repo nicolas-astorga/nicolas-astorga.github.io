@@ -13,44 +13,52 @@ sections:
       title: About Me
       username: admin
 
-  # Highlighted publications (featured only)
+  # Highlighted publications (featured only) — fixed filters + sort
   - block: collection
     id: highlighted
     content:
       title: Publications (Highlighted)
       filters:
-        folders:
-          - publications/articles
+        url: './publications/articles/'
         featured_only: true
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-      sort_by: 'Date'
+      sort_by: 'publish_date'
       sort_ascending: false
     design:
       columns: '2'
       view: article
 
-  # Publications (All) — curated, concise list (no link buttons)
-  - block: markdown
+  # Publications (All) — restored citation view (clean & concise; icons hidden via CSS)
+  - block: collection
     id: publications
     content:
       title: Publications (All)
+      filters:
+        url: './publications/articles/'
+        featured_only: false
+      sort_by: 'publish_date'
+      sort_ascending: false
+    design:
+      columns: '1'
+      view: citation
+
+  # Optional quick breakdown (keep or delete)
+  - block: markdown
+    id: publications-breakdown
+    content:
+      title: Publications — Quick Breakdown
       text: |-
-        **Conferences**
+        **Conferences — First author**
+        - **Astorga, N.**\*, Liu, T.\*, Xiao, Y., & van der Schaar, M. (2025). *Auto‑formulation of Mathematical Optimisation Models Using Large Language Models*. **ICML 2025**. *Equal contribution.*
+        - **Astorga, N.**\*, Kobalczyk, K.\*, Liu, T., & van der Schaar, M. (2025). *Active Task Disambiguation with Large Language Models*. **ICLR 2025 (Spotlight)**. *Equal contribution.*
+        - **Astorga, N.**, Liu, T., Seedat, N., & van der Schaar, M. (2024). *Active Learning with LLMs for Partially Observed and Cost‑Aware Scenarios*. **NeurIPS 2024**.
+        - **Astorga, N.**\*, Liu, T.\*, Seedat, N., & van der Schaar, M. (2024). *Large Language Models to Enhance Bayesian Optimisation*. **ICLR 2024**. *Equal contribution.*
+        - **Astorga, N.**, Huijse, P., Protopapas, P., & Estévez, P. (2020). *MPCC: Matching Priors and Conditionals for Clustering*. **ECCV 2020**, Glasgow.
+        - **Astorga, N.**, Huijse, P., Estévez, P. A., & Förster, F. (2018). *Clustering of Astronomical Transient Candidates Using Deep Variational Embedding*. **IJCNN 2018**, Rio de Janeiro.
 
-        *First author*
-        - **Astorga, N.**\*, Liu, T.\*, Xiao, Y., & van der Schaar, M. (2025). *Auto‑formulation of Mathematical Optimisation Models Using Large Language Models*. In **Proceedings of the 42nd International Conference on Machine Learning (ICML)**. *Equal contribution.*
-        - **Astorga, N.**\*, Kobalczyk, K.\*, Liu, T., & van der Schaar, M. (2025). *Active Task Disambiguation with Large Language Models*. In **Proceedings of the 13th International Conference on Learning Representations (ICLR, Spotlight)**. *Equal contribution.*
-        - **Astorga, N.**, Liu, T., Seedat, N., & van der Schaar, M. (2024). *Active Learning with LLMs for Partially Observed and Cost‑Aware Scenarios*. In **Advances in Neural Information Processing Systems (NeurIPS)**.
-        - **Astorga, N.**\*, Liu, T.\*, Seedat, N., & van der Schaar, M. (2024). *Large Language Models to Enhance Bayesian Optimisation*. In **Proceedings of the 12th International Conference on Learning Representations (ICLR)**. *Equal contribution.*
-        - **Astorga, N.**, Huijse, P., Protopapas, P., & Estévez, P. (2020). *MPCC: Matching Priors and Conditionals for Clustering*. In **European Conference on Computer Vision (ECCV)**, Glasgow.
-        - **Astorga, N.**, Huijse, P., Estévez, P. A., & Förster, F. (2018). *Clustering of Astronomical Transient Candidates Using Deep Variational Embedding*. In **International Joint Conference on Neural Networks (IJCNN)**, Rio de Janeiro.
-
-        *Second author*
-        - Ruhrberg, S., **Astorga, N.**, & van der Schaar, M. (2025). *Timely Clinical Diagnosis through Active Test Selection*. In **Advances in Neural Information Processing Systems (NeurIPS)**.
-        - Amad, H., **Astorga, N.**, & van der Schaar, J.-M. (2025). *Continuously Updating Digital Twins Using Large Language Models*. In **Proceedings of the 28th International Conference on Artificial Intelligence and Statistics (AISTATS)**.
-        - Piskorz, J., **Astorga, N.**, Berrevoets, J., & van der Schaar, M. (2025). *Active Feature Acquisition for Personalised Treatment Assignment*. In **Proceedings of the 42nd International Conference on Machine Learning (ICML)**.
+        **Conferences — Second author**
+        - Ruhrberg, S., **Astorga, N.**, & van der Schaar, M. (2025). *Timely Clinical Diagnosis through Active Test Selection*. **NeurIPS 2025**.
+        - Amad, H., **Astorga, N.**, & van der Schaar, J.-M. (2025). *Continuously Updating Digital Twins Using Large Language Models*. **AISTATS 2025**.
+        - Piskorz, J., **Astorga, N.**, Berrevoets, J., & van der Schaar, M. (2025). *Active Feature Acquisition for Personalised Treatment Assignment*. **ICML 2025**.
 
         **Journals**
         - Cabrera‑Vives, G., Moreno‑Cartagena, D., **Astorga, N.**, Reyes‑Jainaga, I., *et al.* (2024). *ATAT: Astronomical Transformer for Time Series and Tabular Data*. **Astronomy & Astrophysics**.
@@ -60,10 +68,8 @@ sections:
 
         **Workshop**
         - Sun, H., Pouplin, T., **Astorga, N.**, Liu, T., & van der Schaar, M. (2024). *Improving LLM Generation with Inverse and Forward Alignment: Reward Modelling, Prompting, Fine‑Tuning, and Inference‑Time Optimisation*. **NeurIPS 2024 Workshop on System‑2 Reasoning at Scale**.
-    design:
-      columns: '1'
 
-  # Experience (moved after Publications (All))
+  # Experience (stays after Publications)
   - block: experience
     content:
       title: Professional Experience
