@@ -29,40 +29,40 @@ sections:
       view: article
 
   # Publications (All) — curated content, styled like the concise "citation" list
-- block: markdown
-  id: publications
-  content:
-    title: Publications (All)
-    text: |-
-      <h4>Conferences — First author</h4>
-      <ul class="pub-list">
-        <li class="pub-list-item"><strong>N. Astorga</strong>*, T. Liu*, Y. Xiao, M. van der Schaar (2025). <em>Auto-formulation of Mathematical Optimisation Models Using Large Language Models</em>. <strong>ICML 2025</strong>. <em>*Equal contribution.</em></li>
-        <li class="pub-list-item">K. Kobalczyk*, <strong>N. Astorga</strong>*, T. Liu, M. van der Schaar (2025). <em>Active Task Disambiguation with Large Language Models</em>. <strong>ICLR 2025 (Spotlight)</strong>. <em>*Equal contribution.</em></li>
-        <li class="pub-list-item"><strong>N. Astorga</strong>, T. Liu, N. Seedat, M. van der Schaar (2024). <em>Active Learning with LLMs for Partially Observed and Cost-Aware Scenarios</em>. <strong>NeurIPS 2024</strong>.</li>
-        <li class="pub-list-item">T. Liu*, <strong>N. Astorga</strong>*, N. Seedat, M. van der Schaar (2024). <em>Large Language Models to Enhance Bayesian Optimisation</em>. <strong>ICLR 2024</strong>. <em>*Equal contribution.</em></li>
-        <li class="pub-list-item"><strong>N. Astorga</strong>, P. Huijse, P. Protopapas, P. Estévez (2020). <em>MPCC: Matching Priors and Conditionals for Clustering</em>. <strong>ECCV 2020</strong>, Glasgow.</li>
-        <li class="pub-list-item"><strong>N. Astorga</strong>, P. Huijse, P. A. Estévez, F. Förster (2018). <em>Clustering of Astronomical Transient Candidates Using Deep Variational Embedding</em>. <strong>IJCNN 2018</strong>, Rio de Janeiro.</li>
-      </ul>
+  - block: markdown
+    id: publications
+    content:
+      title: Publications (All)
+      text: |
+        <h4>Conferences — First author</h4>
+        <ul class="pub-list">
+          <li class="pub-list-item"><strong>N. Astorga</strong>*, T. Liu*, Y. Xiao, M. van der Schaar (2025). <em>Auto-formulation of Mathematical Optimisation Models Using Large Language Models</em>. <strong>ICML 2025</strong>. <em>*Equal contribution.</em></li>
+          <li class="pub-list-item">K. Kobalczyk*, <strong>N. Astorga</strong>*, T. Liu, M. van der Schaar (2025). <em>Active Task Disambiguation with Large Language Models</em>. <strong>ICLR 2025 (Spotlight)</strong>. <em>*Equal contribution.</em></li>
+          <li class="pub-list-item"><strong>N. Astorga</strong>, T. Liu, N. Seedat, M. van der Schaar (2024). <em>Active Learning with LLMs for Partially Observed and Cost-Aware Scenarios</em>. <strong>NeurIPS 2024</strong>.</li>
+          <li class="pub-list-item">T. Liu*, <strong>N. Astorga</strong>*, N. Seedat, M. van der Schaar (2024). <em>Large Language Models to Enhance Bayesian Optimisation</em>. <strong>ICLR 2024</strong>. <em>*Equal contribution.</em></li>
+          <li class="pub-list-item"><strong>N. Astorga</strong>, P. Huijse, P. Protopapas, P. Estévez (2020). <em>MPCC: Matching Priors and Conditionals for Clustering</em>. <strong>ECCV 2020</strong>, Glasgow.</li>
+          <li class="pub-list-item"><strong>N. Astorga</strong>, P. Huijse, P. A. Estévez, F. Förster (2018). <em>Clustering of Astronomical Transient Candidates Using Deep Variational Embedding</em>. <strong>IJCNN 2018</strong>, Rio de Janeiro.</li>
+        </ul>
 
-      <h4>Conferences — Second author</h4>
-      <ul class="pub-list">
-        <li class="pub-list-item">S. Ruhrberg, <strong>N. Astorga</strong>, M. van der Schaar (2025). <em>Timely Clinical Diagnosis through Active Test Selection</em>. <strong>NeurIPS 2025</strong>.</li>
-        <li class="pub-list-item">H. Amad, <strong>N. Astorga</strong>, J.-M. van der Schaar (2025). <em>Continuously Updating Digital Twins Using Large Language Models</em>. <strong>AISTATS 2025</strong>.</li>
-        <li class="pub-list-item">J. Piskorz, <strong>N. Astorga</strong>, J. Berrevoets, M. van der Schaar (2025). <em>Active Feature Acquisition for Personalised Treatment Assignment</em>. <strong>ICML 2025</strong>.</li>
-      </ul>
+        <h4>Conferences — Second author</h4>
+        <ul class="pub-list">
+          <li class="pub-list-item">S. Ruhrberg, <strong>N. Astorga</strong>, M. van der Schaar (2025). <em>Timely Clinical Diagnosis through Active Test Selection</em>. <strong>NeurIPS 2025</strong>.</li>
+          <li class="pub-list-item">H. Amad, <strong>N. Astorga</strong>, J.-M. van der Schaar (2025). <em>Continuously Updating Digital Twins Using Large Language Models</em>. <strong>AISTATS 2025</strong>.</li>
+          <li class="pub-list-item">J. Piskorz, <strong>N. Astorga</strong>, J. Berrevoets, M. van der Schaar (2025). <em>Active Feature Acquisition for Personalised Treatment Assignment</em>. <strong>ICML 2025</strong>.</li>
+        </ul>
 
-      <h4>Journals</h4>
-      <ul class="pub-list">
-        <li class="pub-list-item">G. Cabrera-Vives, D. Moreno-Cartagena, <strong>N. Astorga</strong>, I. Reyes-Jainaga, <em>et&nbsp;al.</em> (2024). <em>ATAT: Astronomical Transformer for Time Series and Tabular Data</em>. <strong>Astronomy &amp; Astrophysics</strong>.</li>
-        <li class="pub-list-item">M. Pérez-Carrasco, G. Cabrera-Vives, L. Hernández-García, F. Förster, <strong>N. Astorga</strong>, <em>et&nbsp;al.</em> (2023). <em>Alert Classification for the ALeRCE Broker System: The Anomaly Detector</em>. <strong>The Astronomical Journal</strong>.</li>
-        <li class="pub-list-item">F. Förster, G. Cabrera-Vives, E. Castillo-Navarrete, P. A. Estévez, <strong>N. Astorga</strong>, <em>et&nbsp;al.</em> (2021). <em>The Automatic Learning for the Rapid Classification of Events (ALeRCE) Alert Broker</em>. <strong>The Astronomical Journal</strong>.</li>
-        <li class="pub-list-item">C. Modarres, <strong>N. Astorga</strong>, E. Droguett, V. Meruane (2018). <em>Convolutional Neural Networks for Automated Damage Recognition and Damage Type Identification</em>. <strong>Structural Control and Health Monitoring</strong>.</li>
-      </ul>
+        <h4>Journals</h4>
+        <ul class="pub-list">
+          <li class="pub-list-item">G. Cabrera-Vives, D. Moreno-Cartagena, <strong>N. Astorga</strong>, I. Reyes-Jainaga, <em>et&nbsp;al.</em> (2024). <em>ATAT: Astronomical Transformer for Time Series and Tabular Data</em>. <strong>Astronomy &amp; Astrophysics</strong>.</li>
+          <li class="pub-list-item">M. Pérez-Carrasco, G. Cabrera-Vives, L. Hernández-García, F. Förster, <strong>N. Astorga</strong>, <em>et&nbsp;al.</em> (2023). <em>Alert Classification for the ALeRCE Broker System: The Anomaly Detector</em>. <strong>The Astronomical Journal</strong>.</li>
+          <li class="pub-list-item">F. Förster, G. Cabrera-Vives, E. Castillo-Navarrete, P. A. Estévez, <strong>N. Astorga</strong>, <em>et&nbsp;al.</em> (2021). <em>The Automatic Learning for the Rapid Classification of Events (ALeRCE) Alert Broker</em>. <strong>The Astronomical Journal</strong>.</li>
+          <li class="pub-list-item">C. Modarres, <strong>N. Astorga</strong>, E. Droguett, V. Meruane (2018). <em>Convolutional Neural Networks for Automated Damage Recognition and Damage Type Identification</em>. <strong>Structural Control and Health Monitoring</strong>.</li>
+        </ul>
 
-      <h4>Workshop</h4>
-      <ul class="pub-list">
-        <li class="pub-list-item">H. Sun, T. Pouplin, <strong>N. Astorga</strong>, T. Liu, M. van der Schaar (2024). <em>Improving LLM Generation with Inverse and Forward Alignment: Reward Modelling, Prompting, Fine-Tuning, and Inference-Time Optimisation</em>. <strong>NeurIPS 2024 Workshop on System-2 Reasoning at Scale</strong>.</li>
-      </ul>
+        <h4>Workshop</h4>
+        <ul class="pub-list">
+          <li class="pub-list-item">H. Sun, T. Pouplin, <strong>N. Astorga</strong>, T. Liu, M. van der Schaar (2024). <em>Improving LLM Generation with Inverse and Forward Alignment: Reward Modelling, Prompting, Fine-Tuning, and Inference-Time Optimisation</em>. <strong>NeurIPS 2024 Workshop on System-2 Reasoning at Scale</strong>.</li>
+        </ul>
 
   # Experience (stays after Publications)
   - block: experience
