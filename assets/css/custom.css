@@ -40,9 +40,9 @@ h3.article-title a:hover {
 
 /* Grow the image column */
 #highlighted .view-article .list__item .media .media-left {
-  width: 280px;               /* <— pick your size */
-  max-width: 280px;
-  flex: 0 0 280px;            /* prevents shrinking below 420px */
+  width: 420px;               /* <— pick your size */
+  max-width: 420px;
+  flex: 0 0 420px;            /* prevents shrinking below 420px */
 }
 
 /* Make the image fill that column */
