@@ -31,33 +31,49 @@ h3.article-title a:hover {
   flex: 1 1 auto;
 }
 
-/* ⬆️ Double the image size from 140px → 280px */
-#highlighted .view-article .list__item .media img,
-#highlighted .view-article .list__item .media .article-banner,
+/* Publications (Highlighted) — make the thumbnails bigger */
+#highlighted .view-article .list__item .media {
+  gap: 1.25rem;               /* a bit more breathing room */
+  flex-direction: row-reverse; /* keep image on the right (your choice) */
+  align-items: center;
+}
+
+/* Grow the image column */
 #highlighted .view-article .list__item .media .media-left {
-  max-width: 420px;
+  width: 280px;               /* <— pick your size */
+  max-width: 280px;
+  flex: 0 0 280px;            /* prevents shrinking below 420px */
+}
+
+/* Make the image fill that column */
+#highlighted .view-article .list__item .media .article-banner,
+#highlighted .view-article .list__item .media img {
+  display: block;
+  width: 100%;
   height: auto;
   margin: 0 0 0 1rem;
   border-radius: 6px;
 }
 
-#highlighted .view-article .list__item {
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
+/* Mobile: stack and let the image be full width */
 @media (max-width: 576px) {
   #highlighted .view-article .list__item .media {
     flex-direction: column;
     align-items: flex-start;
   }
-  #highlighted .view-article .list__item .media img,
-  #highlighted .view-article .list__item .media .article-banner {
-    max-width: 100%;
+  #highlighted .view-article .list__item .media .media-left {
+    width: 100%;
+    max-width: none;
+    flex: 0 0 auto;
+    margin: 0.5rem 0 0 0;
+  }
+  #highlighted .view-article .list__item .media .article-banner,
+  #highlighted .view-article .list__item .media img {
+    width: 100%;
     margin: 0.5rem 0 0 0;
   }
 }
+
 
 /* ---- Publications (All) — concise, citation-like look; no action buttons ---- */
 #publications .btn,
