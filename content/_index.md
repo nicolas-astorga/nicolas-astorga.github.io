@@ -25,8 +25,8 @@ sections:
       sort_by: 'publish_date'
       sort_ascending: false
     design:
-      columns: '2'
-      view: article
+      columns: '1'
+      view: compact
 
   # Publications (All) — curated content, styled like the concise "citation" list
   - block: markdown

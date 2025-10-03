@@ -158,3 +158,46 @@ h3.article-title a:hover {
     width: 100% !important;
   }
 }
+
+
+/* Publications (Highlighted) — COMPACT list with a big right-hand thumbnail */
+#highlighted .view-compact .list__item .media {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-direction: row-reverse; /* image on the right */
+}
+
+#highlighted .view-compact .list__item .media .media-body {
+  flex: 1 1 auto;
+}
+
+/* Widen the thumbnail column */
+#highlighted .view-compact .list__item .media > :not(.media-body) {
+  flex: 0 0 420px !important;
+  max-width: 420px !important;
+}
+
+/* Make the image fill that column */
+#highlighted .view-compact .list__item .article-banner,
+#highlighted .view-compact .list__item .article-banner img,
+#highlighted .view-compact .list__item .media img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 6px;
+}
+
+/* Mobile: stack and go full-width */
+@media (max-width: 576px) {
+  #highlighted .view-compact .list__item .media {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #highlighted .view-compact .list__item .media > :not(.media-body) {
+    flex: 0 0 auto !important;
+    max-width: none !important;
+    width: 100% !important;
+    margin-top: 0.5rem;
+  }
+}
