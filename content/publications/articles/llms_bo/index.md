@@ -2,8 +2,8 @@
 title: 'Large Language Models to Enhance Bayesian Optimisation'
 
 authors:
-  - admin
   - Tennison Liu
+  - admin
   - N. Seedat
   - Mihaela van der Schaar
 
