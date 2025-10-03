@@ -18,8 +18,8 @@ summary: Active learning strategies for partially observed, cost‑aware setting
 featured: true
 
 links:
-- name: Google Scholar
-  url: 'https://scholar.google.com/citations?view_op=view_citation&hl=es&user=oLiBK8cAAAAJ&sortby=pubdate&citation_for_view=oLiBK8cAAAAJ:YOwf2qJgpHMC'
+- name: arxiv
+  url: 'https://neurips.cc/virtual/2024/poster/94473'
 
 tags: [Active Learning, LLMs, Cost-aware]
 ---

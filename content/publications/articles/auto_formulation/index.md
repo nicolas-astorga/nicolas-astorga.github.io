@@ -22,8 +22,8 @@ summary: Automatically formulating optimisation models from natural language usi
 featured: true
 
 links:
-- name: Google Scholar
-  url: 'https://scholar.google.com/citations?view_op=view_citation&hl=es&user=oLiBK8cAAAAJ&sortby=pubdate&citation_for_view=oLiBK8cAAAAJ:3fE2CSJIrl8C'
+- name: arxiv
+  url: 'https://arxiv.org/abs/2411.01679'
 
 tags: [LLMs, Optimisation, Program Synthesis]
 ---

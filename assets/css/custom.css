@@ -35,7 +35,7 @@ h3.article-title a:hover {
 #highlighted .view-article .list__item .media img,
 #highlighted .view-article .list__item .media .article-banner,
 #highlighted .view-article .list__item .media .media-left {
-  max-width: 280px;
+  max-width: 420px;
   height: auto;
   margin: 0 0 0 1rem;
   border-radius: 6px;
