@@ -64,6 +64,6 @@ social:
 highlight_name: true
 ---
 
-I’m a Ph.D. student at the University of Cambridge advised by Prof. Mihaela van der Schaar. My research explores **Reasoning**, **Bayesian experimental design**, and **Optimization** in the context of **LLMs**. Previously, I completed a two M.Sc. in Electrical Engineering and Computer Science at the University of Chile. I also worked as an ML Engineer at ALeRCE, and interned at Harvard IACS.
+I’m a Ph.D. student at the University of Cambridge advised by Prof. Mihaela van der Schaar. My research explores **Reasoning**, **Bayesian experimental design**, and **Optimization** in the context of **LLMs**. Previously, I completed a two M.Sc. in Electrical Engineering and Computer Science at the University of Chile. I also worked as an ML Engineer at ALeRCE, and interned at Harvard IACS. My research contributions have been published in leading conferences, including NeurIPS, ICML, ICLR (Spotlight), ECCV, and AISTATS.
 
 I am really interested in LLM research and leveraging their inductive biases to drive exploration and exploitation, and then using the collected experience to improve those biases (via in-context learning or training). This exploration–exploitation is with a goal in mind, making search methods and efficient experimentation also interesting. These ideas admit many implementations, which is part of the fun. I love that LLMs—and deep learning more broadly—are built to search and learn.

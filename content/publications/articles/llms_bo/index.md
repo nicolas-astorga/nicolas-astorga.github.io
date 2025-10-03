@@ -18,7 +18,7 @@ publication_types: ['1']
 publication: In The Twelfth International Conference on Learning Representations
 publication_short: In *ICLR 2024*
 
-summary: Leveraging LLMs to improve Bayesian optimisation.
+summary: Leveraging LLMs to improve Bayesian optimisation. Accepted at **ICLR 2024**.
 featured: true
 
 # links:
