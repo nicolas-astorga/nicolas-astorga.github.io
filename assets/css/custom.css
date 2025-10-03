@@ -116,3 +116,45 @@ h3.article-title a:hover {
 #publications p {
   margin: 0.25rem 0;
 }
+
+
+
+/* --- Force wider thumbnails in 'Publications (Highlighted)' --- */
+
+/* Widen the image column regardless of the exact class name */
+#highlighted .view-article .list__item .media > :not(.media-body) {
+  flex: 0 0 420px !important;  /* fixed column width */
+  max-width: 420px !important;
+}
+
+/* Make the banner/image fill that column and lift any height caps */
+#highlighted .view-article .list__item .article-banner,
+#highlighted .view-article .list__item .article-banner img,
+#highlighted .view-article .list__item .media img {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* Keep your right-side layout and spacing */
+#highlighted .view-article .list__item .media {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-direction: row-reverse;
+}
+
+/* Mobile: stack with full-width image */
+@media (max-width: 576px) {
+  #highlighted .view-article .list__item .media {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #highlighted .view-article .list__item .media > :not(.media-body) {
+    flex: 0 0 auto !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+}
