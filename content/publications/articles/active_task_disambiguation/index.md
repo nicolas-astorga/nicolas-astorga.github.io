@@ -27,12 +27,8 @@ tags: [Task Ambiguity, Bayesian Experimental Design, Large Language Models, Acti
 featured: true
 
 links:
-- name: OpenReview
-  url: 'https://openreview.net/forum?id=JAMxRSXLFz'
 - name: arXiv
   url: 'https://arxiv.org/abs/2502.04485'
-- name: PDF
-  url: 'publications/articles/active_task_disambiguation/paper.pdf'
 
 image:
   caption: ''
