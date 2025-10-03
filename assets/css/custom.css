@@ -18,61 +18,6 @@ h3.article-title a:hover {
   margin: 0 auto;
 }
 
-/* ---- Highlighted Publications layout tweaks ----
-   Goal: show the featured image on the RIGHT, remain compact. */
-#highlighted .view-article .list__item .media {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-direction: row-reverse; /* put image on the right */
-}
-
-#highlighted .view-article .list__item .media .media-body {
-  flex: 1 1 auto;
-}
-
-/* Publications (Highlighted) — make the thumbnails bigger */
-#highlighted .view-article .list__item .media {
-  gap: 1.25rem;               /* a bit more breathing room */
-  flex-direction: row-reverse; /* keep image on the right (your choice) */
-  align-items: center;
-}
-
-/* Grow the image column */
-#highlighted .view-article .list__item .media .media-left {
-  width: 420px !important;               /* <— pick your size */
-  max-width: 420px;
-  flex: 0 0 420px !important;            /* prevents shrinking below 420px */
-}
-
-/* Make the image fill that column */
-#highlighted .view-article .list__item .media .article-banner,
-#highlighted .view-article .list__item .media img {
-  display: block;
-  width: 100% !important;
-  height: auto !important;
-  margin: 0 0 0 1rem;
-  border-radius: 6px;
-}
-
-/* Mobile: stack and let the image be full width */
-@media (max-width: 576px) {
-  #highlighted .view-article .list__item .media {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #highlighted .view-article .list__item .media .media-left {
-    width: 100%;
-    max-width: none;
-    flex: 0 0 auto;
-    margin: 0.5rem 0 0 0;
-  }
-  #highlighted .view-article .list__item .media .article-banner,
-  #highlighted .view-article .list__item .media img {
-    width: 100%;
-    margin: 0.5rem 0 0 0;
-  }
-}
 
 
 /* ---- Publications (All) — concise, citation-like look; no action buttons ---- */
@@ -120,84 +65,50 @@ h3.article-title a:hover {
 
 
 /* --- Force wider thumbnails in 'Publications (Highlighted)' --- */
+/* =========================================================
+   HIGHLIGHTED — Bigger thumbnails for COMPACT view (v5.x)
+   ========================================================= */
 
-/* Widen the image column regardless of the exact class name */
-#highlighted .view-article .list__item .media > :not(.media-body) {
-  flex: 0 0 420px !important;  /* fixed column width */
-  max-width: 420px !important;
-}
-
-/* Make the banner/image fill that column and lift any height caps */
-#highlighted .view-article .list__item .article-banner,
-#highlighted .view-article .list__item .article-banner img,
-#highlighted .view-article .list__item .media img {
-  display: block;
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-  max-height: none !important;
-}
-
-/* Keep your right-side layout and spacing */
-#highlighted .view-article .list__item .media {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  flex-direction: row-reverse;
-}
-
-/* Mobile: stack with full-width image */
-@media (max-width: 576px) {
-  #highlighted .view-article .list__item .media {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #highlighted .view-article .list__item .media > :not(.media-body) {
-    flex: 0 0 auto !important;
-    max-width: none !important;
-    width: 100% !important;
-  }
-}
-
-
-/* Publications (Highlighted) — COMPACT list with a big right-hand thumbnail */
-#highlighted .view-compact .list__item .media {
+/* 1) Make the compact cards a flex row with the image on the right */
+#highlighted .view-compact .list__item .article-container {
   display: flex;
   align-items: center;
   gap: 1.25rem;
   flex-direction: row-reverse; /* image on the right */
 }
 
-#highlighted .view-compact .list__item .media .media-body {
-  flex: 1 1 auto;
-}
-
-/* Widen the thumbnail column */
-#highlighted .view-compact .list__item .media > :not(.media-body) {
-  flex: 0 0 420px !important;
+/* 2) Widen the image column */
+#highlighted .view-compact .list__item .article-banner {
+  flex: 0 0 420px !important;  /* pick your size */
+  width: 420px !important;
   max-width: 420px !important;
 }
 
-/* Make the image fill that column */
-#highlighted .view-compact .list__item .article-banner,
-#highlighted .view-compact .list__item .article-banner img,
-#highlighted .view-compact .list__item .media img {
+/* 3) Let the text column flex */
+#highlighted .view-compact .list__item .article-body {
+  flex: 1 1 auto;
+}
+
+/* 4) Make the image fill the banner and remove height clamps */
+#highlighted .view-compact .list__item .article-banner img {
   display: block;
   width: 100% !important;
   height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important; /* avoid cropping */
   border-radius: 6px;
 }
 
-/* Mobile: stack and go full-width */
+/* 5) Mobile: stack and go full width */
 @media (max-width: 576px) {
-  #highlighted .view-compact .list__item .media {
+  #highlighted .view-compact .list__item .article-container {
     flex-direction: column;
     align-items: flex-start;
   }
-  #highlighted .view-compact .list__item .media > :not(.media-body) {
+  #highlighted .view-compact .list__item .article-banner {
     flex: 0 0 auto !important;
-    max-width: none !important;
     width: 100% !important;
+    max-width: none !important;
     margin-top: 0.5rem;
   }
 }
