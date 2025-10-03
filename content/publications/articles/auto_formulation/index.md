@@ -18,7 +18,7 @@ publication_types: ['1']
 publication: In the 42nd International Conference on Machine Learning
 publication_short: In *ICML 2025*
 
-summary: Automatically formulating optimisation models from natural language using LLMs.
+summary: Automatically formulating optimisation models from natural language using LLMs. Accepted at **ICML 2025**.
 featured: true
 
 links:

@@ -14,7 +14,7 @@ publication_types: ['1']
 publication: In Advances in Neural Information Processing Systems
 publication_short: In *NeurIPS 2024*
 
-summary: Active learning strategies for partially observed, cost‑aware settings via LLMs.
+summary: Active learning strategies for partially observed, cost‑aware settings via LLMs. Accepted at **NeurIPS 2024**.
 featured: true
 
 links:
