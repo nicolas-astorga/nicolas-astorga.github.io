@@ -18,7 +18,46 @@ h3.article-title a:hover {
   margin: 0 auto;
 }
 
+/* ---- Highlighted Publications layout tweaks ----
+   Goal: show the featured image on the RIGHT, remain compact. */
+#highlighted .view-article .list__item .media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row-reverse; /* put image on the right */
+}
 
+#highlighted .view-article .list__item .media .media-body {
+  flex: 1 1 auto;
+}
+
+/* ⬆️ Double the image size from 140px → 280px */
+#highlighted .view-article .list__item .media img,
+#highlighted .view-article .list__item .media .article-banner,
+#highlighted .view-article .list__item .media .media-left {
+  max-width: 280px;
+  height: auto;
+  margin: 0 0 0 1rem;
+  border-radius: 6px;
+}
+
+#highlighted .view-article .list__item {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+@media (max-width: 576px) {
+  #highlighted .view-article .list__item .media {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #highlighted .view-article .list__item .media img,
+  #highlighted .view-article .list__item .media .article-banner {
+    max-width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+}
 
 /* ---- Publications (All) — concise, citation-like look; no action buttons ---- */
 #publications .btn,
@@ -60,55 +99,4 @@ h3.article-title a:hover {
 /* Slightly tighten paragraph spacing inside the publications block */
 #publications p {
   margin: 0.25rem 0;
-}
-
-
-
-/* --- Force wider thumbnails in 'Publications (Highlighted)' --- */
-/* =========================================================
-   HIGHLIGHTED — Bigger thumbnails for COMPACT view (v5.x)
-   ========================================================= */
-
-/* 1) Make the compact cards a flex row with the image on the right */
-#highlighted .view-compact .list__item .article-container {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  flex-direction: row-reverse; /* image on the right */
-}
-
-/* 2) Widen the image column */
-#highlighted .view-compact .list__item .article-banner {
-  flex: 0 0 420px !important;  /* pick your size */
-  width: 420px !important;
-  max-width: 420px !important;
-}
-
-/* 3) Let the text column flex */
-#highlighted .view-compact .list__item .article-body {
-  flex: 1 1 auto;
-}
-
-/* 4) Make the image fill the banner and remove height clamps */
-#highlighted .view-compact .list__item .article-banner img {
-  display: block;
-  width: 100% !important;
-  height: auto !important;
-  max-height: none !important;
-  object-fit: contain !important; /* avoid cropping */
-  border-radius: 6px;
-}
-
-/* 5) Mobile: stack and go full width */
-@media (max-width: 576px) {
-  #highlighted .view-compact .list__item .article-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #highlighted .view-compact .list__item .article-banner {
-    flex: 0 0 auto !important;
-    width: 100% !important;
-    max-width: none !important;
-    margin-top: 0.5rem;
-  }
 }
